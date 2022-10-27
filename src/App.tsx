@@ -1,5 +1,7 @@
 import React, { FormEvent, useState } from 'react';
-import { Form, Button, Input, Label, Row, List } from 'reactstrap';
+import { Form, Button, Input, Label, Row, List, Col, Container } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 interface Character {
     name: string;
@@ -28,29 +30,36 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="Challenge">
+    <Container className="Challenge">
       {/* Search Form */}
-      <Row>
-        <Form onSubmit={searchForCharacter}>
-          <Label>Search for a Star Wars Character: </Label>
-          <Input
-            type="text"
-            placeholder="Han Solo"
-            onChange={(e) => setCharacterQuery(e.target.value)}
-          />
-          <Button>Search</Button>
-        </Form>
-      </Row>
+      <Form onSubmit={searchForCharacter}>
+        <Row className="form-items" xs="12">
+            <Col>
+              <Label>Search for a Star Wars Character: </Label>
+            </Col>
+            <Col>
+              <Input
+                type="text"
+                placeholder="Han Solo"
+                onChange={(e) => setCharacterQuery(e.target.value)}
+              />
+            </Col>
+            <Col>
+              <Button>Search</Button>
+            </Col>
+
+        </Row>
+      </Form>
       {/* Results List */}
       <Row>
-        <List>
+        <List className="results">
           {searchResult.map((character: Character = {
             name: '',
             height: '',
             mass: '',
             url: ''
           }) => (
-            <li>
+            <li className="result">
               {character.name}
               <List>
                 <li>Height: {character.height}</li>
@@ -61,7 +70,7 @@ const App: React.FC = () => {
           ))}
         </List>
       </Row>
-    </div>
+    </Container>
   );
 }
 
