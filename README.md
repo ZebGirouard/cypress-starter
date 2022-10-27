@@ -152,3 +152,11 @@ cy.get("@result").each(($item) => {
     expect($item.find("a").attr("href")).to.include("https://swapi.dev/api/people/");
 });
 ```
+
+## Further Resources
+
+Ready to learn about more Cypress features? Then check out these docs to take your skills to the next level!
+
+- [Cypress Tasks](https://docs.cypress.io/api/commands/task): Execute node commands
+- [Cypress Fixtures](https://docs.cypress.io/api/commands/fixture): Load a fixed set of mock data
+- [Cypress Intercepts](https://docs.cypress.io/api/commands/intercept): Spy and stub network requests
