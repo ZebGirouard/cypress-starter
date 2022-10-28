@@ -47,7 +47,6 @@ const App: React.FC = () => {
             <Col>
               <Button>Search</Button>
             </Col>
-
         </Row>
       </Form>
       {/* Results List */}
