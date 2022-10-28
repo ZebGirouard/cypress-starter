@@ -160,3 +160,4 @@ Ready to learn about more Cypress features? Then check out these docs to take yo
 - [Cypress Tasks](https://docs.cypress.io/api/commands/task): Execute node commands
 - [Cypress Fixtures](https://docs.cypress.io/api/commands/fixture): Load a fixed set of mock data
 - [Cypress Intercepts](https://docs.cypress.io/api/commands/intercept): Spy and stub network requests
+- [The Course I Took](https://frontendmasters.com/courses/cypress/)
