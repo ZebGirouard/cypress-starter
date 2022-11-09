@@ -93,7 +93,7 @@ Open Developer Tools, select "Recorder" then "Start a new recording":
 - Save the file as `characterSearch.cy.js`
 - Move this file into the `cypress/e2e` folder
 
-![](assets/reccorder2.png)
+![](assets/recorder2.png)
 
 Click `characterSearch.cy.js` at the bottom of the specs in the Cypress Browser window.
 
